@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog Académico · Ética y Ciudadanía</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ════════════ HEADER ════════════ -->
+  <header class="site-header">
+    <div class="header-bg"></div>
+    <div class="header-content">
+      <div class="header-label">Asignatura · Blog Académico</div>
+      <h1 class="header-title">Ética <em>&amp;</em> Ciudadanía</h1>
+      <p class="header-subtitle">Reflexiones sobre los dilemas morales que definen nuestra época y sociedad </p>
+    </div>
+    <div class="floating-orbs">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="orb orb-3"></span>
+    </div>
+  </header>
+
+  <!-- ════════════ NAV ════════════ -->
+  <nav class="main-nav" id="mainNav">
+    <div class="nav-inner">
+      <button class="nav-btn active" data-theme="blue" data-target="digital">
+        <span class="nav-icon">⬡</span>Dilemas Digitales <!-- ════════════ tema ════════════ -->
+      </button>
+      <button class="nav-btn" data-theme="coral" data-target="social">
+        <span class="nav-icon">◈</span>Responsabilidad Social <!-- ════════════ tema ════════════ -->
+      </button>
+      <button class="nav-btn" data-theme="emerald" data-target="profesional">
+        <span class="nav-icon">◇</span>Ética Profesional <!-- ════════════ tema ════════════ -->
+      </button>
+      <button class="nav-btn" data-theme="amber" data-target="corrupcion">
+        <span class="nav-icon">◉</span>Corrupción y Legalidad <!-- ════════════ tema ════════════ -->
+      </button>
+      <button class="nav-btn" data-theme="purple" data-target="ods">
+        <span class="nav-icon">✦</span>Desarrollo Sostenible <!-- ════════════ tema ════════════ -->
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════════ MAIN ════════════ -->
+  <main class="main-content">
+
+    <!-- ── SECCIÓN 1: Dilemas Éticos Digitales ── -->
+    <section class="topic-section" id="digital">
+      <div class="section-header">
+        <div class="section-number">01</div>
+        <div class="section-meta">
+          <span class="section-tag">Ética Digital</span>
+          <h2 class="section-title">Dilemas Éticos <br><em>Era Digital</em></h2>
+          <p class="section-intro">La digitalización no es un proceso neutral; está cargada de valores. El principal dilema ético actual es la Opacidad Algorítmica. En el desarrollo de software, nos enfrentamos a las "Black Boxes" (Cajas Negras), donde los sistemas de aprendizaje profundo toman decisiones críticas sin que los humanos podamos rastrear el razonamiento lógico.</p>
+        </div>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-image" style="--img-hue: 210deg;">
+            <div class="card-img-placeholder">
+              <svg viewBox="0 0 80 60" fill="none"><rect x="10" y="10" width="60" height="40" rx="4" stroke="currentColor" stroke-width="1.5"/><circle cx="40" cy="30" r="10" stroke="currentColor" stroke-width="1.5"/><path d="M20 50 L60 50" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3"/><circle cx="15" cy="15" r="3" fill="currentColor" opacity=".4"/><circle cx="65" cy="15" r="3" fill="currentColor" opacity=".4"/></svg>
+            </div>
+            <span class="card-label">Sesgos</span>  
+          </div>
+          <div class="card-body">
+            <h3>Sesgos Cognitivos en el Código</h3>
+            <p>Los algoritmos heredan los prejuicios de sus creadores o de los datos históricos. Éticamente, el ingeniero debe aplicar la Justicia Distributiva, asegurando que el software no perpetúe la discriminación racial, de género o socioeconómica.</p>
+            <button class="reveal-btn" data-target="ex-digital-1">Ver Ejemplo de Aplicación</button>
+            <div class="reveal-content" id="ex-digital-1">
+              <div class="example-box">
+                <strong>Caso Cambridge Analytica (2018):</strong> Datos de 87 millones de usuarios de Facebook fueron utilizados sin consentimiento para influir en elecciones. Este caso evidenció cómo la recolección masiva de datos puede erosionar la democracia misma.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image" style="--img-hue: 220deg;">
+            <div class="card-img-placeholder">
+              <svg viewBox="0 0 80 60" fill="none"><path d="M40 10 L70 30 L40 50 L10 30 Z" stroke="currentColor" stroke-width="1.5"/><circle cx="40" cy="30" r="6" fill="currentColor" opacity=".5"/><path d="M25 20 L40 10 M55 20 L40 10" stroke="currentColor" stroke-width="1" opacity=".5"/><path d="M25 40 L10 30 M55 40 L70 30" stroke="currentColor" stroke-width="1" opacity=".5"/></svg>
+            </div>
+            <span class="card-label">Autonomía</span>
+          </div>
+          <div class="card-body">
+            <h3>La Autonomía del Usuario</h3>
+            <p>Según la ética de Immanuel Kant, el ser humano debe ser siempre un fin en sí mismo y no un medio. El diseño de interfaces que utilizan "Dark Patterns" para manipular el consentimiento del usuario viola este principio fundamental de autonomía.</p>
+            <button class="reveal-btn" data-target="ex-digital-2">Ver Ejemplo de Aplicación</button>
+            <div class="reveal-content" id="ex-digital-2">
+              <div class="example-box">
+                <strong>Sistema COMPAS en EE.UU.:</strong> Una IA usada para predecir reincidencia criminal mostraba doble probabilidad de clasificar erróneamente a personas afroamericanas como alto riesgo. Un claro ejemplo de injusticia algorítmica sistémica.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card-wide">
+          <div class="card-image" style="--img-hue: 200deg;">
+            <div class="card-img-placeholder">
+              <svg viewBox="0 0 80 60" fill="none"><rect x="5" y="15" width="30" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/><rect x="45" y="15" width="30" height="20" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M35 25 L45 25" stroke="currentColor" stroke-width="2" marker-end="url(#a)"/><path d="M20 35 L20 45 L60 45 L60 35" stroke="currentColor" stroke-width="1" stroke-dasharray="3 2"/><circle cx="40" cy="45" r="4" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <span class="card-label">Desinformación</span>
+          </div>
+          <div class="card-body">
+            <h3>Fake News y Responsabilidad de las Plataformas</h3>
+            <p>¿Son las plataformas digitales simples intermediarios o actores responsables del contenido que viralizan? El dilema entre libertad de expresión y daño social real.</p>
+            <button class="reveal-btn" data-target="ex-digital-3">Ver Ejemplo de Aplicación</button>
+            <div class="reveal-content" id="ex-digital-3">
+              <div class="example-box">
+                <strong>Infodemia COVID-19 (OMS, 2020):</strong> La OMS declaró una "infodemia" paralela a la pandemia. Desinformación sobre tratamientos causó muertes directas. Las plataformas tardaron meses en implementar etiquetas de verificación, cuestionando su responsabilidad ética.
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── SECCIÓN 2: Responsabilidad Social ── -->
+    <section class="topic-section" id="social">
+      <div class="section-header">
+        <div class="section-number">02</div>
+        <div class="section-meta">
+          <span class="section-tag">Compromiso Colectivo</span>
+          <h2 class="section-title">Responsabilidad Social<br><em>La Tecnología como Bien Público</em></h2>
+          <p class="section-intro">La Responsabilidad Social trasciende la visión corporativa y se instala en la Ética de la Solidaridad. Para un profesional del software, esto significa entender que el código tiene el poder de democratizar o de marginar.</p>
+        </div>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-image" style="--img-hue: 0deg;">
+            <div class="card-img-placeholder">
+              <svg viewBox="0 0 80 60" fill="none"><circle cx="40" cy="20" r="12" stroke="currentColor" stroke-width="1.5"/><path d="M20 55 C20 42 60 42 60 55" stroke="currentColor" stroke-width="1.5"/><circle cx="15" cy="25" r="8" stroke="currentColor" stroke-width="1"/><circle cx="65" cy="25" r="8" stroke="currentColor" stroke-width="1"/><path d="M5 50 C5 41 25 41 25 50" stroke="currentColor" stroke-width="1" opacity=".5"/><path d="M55 50 C55 41 75 41 75 50" stroke="currentColor" stroke-width="1" opacity=".5"/></svg>
+            </div>
+            <span class="card-label">Comunidad</span>
+          </div>
+          <div class="card-body">
+            <h3>Inclusión y Brecha Digital</h3>
+            <p>nos obliga a considerar la Arquitectura Inclusiva. No se trata solo de cumplir con estándares como la WCAG (Web Content Accessibility Guidelines), sino de diseñar soluciones que funcionen en contextos de baja conectividad o dispositivos de gama baja, garantizando que el acceso al conocimiento sea un derecho y no un privilegio.</p>
+            <button class="reveal-btn" data-target="ex-social-1">Ver Ejemplo de Aplicación</button>
+            <div class="reveal-content" id="ex-social-1">
+              <div class="example-box">
+                <strong>Presupuesto Participativo (Porto Alegre, Brasil):</strong> Desde 1989, los ciudadanos deciden directamente cómo invertir parte del presupuesto municipal. Un modelo replicado en más de 3,000 ciudades del mundo que demostró que la participación reduce la corrupción y mejora servicios.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image" style="--img-hue: 10deg;">
+            <div class="card-img-placeholder">
+              <svg viewBox="0 0 80 60" fill="none"><path d="M40 8 L40 52" stroke="currentColor" stroke-width="1.5"/><path d="M15 30 L65 30" stroke="currentColor" stroke-width="1.5"/><circle cx="40" cy="30" r="18" stroke="currentColor" stroke-width="1.5" stroke-dasharray="5 3"/><path d="M25 15 Q40 5 55 15" stroke="currentColor" stroke-width="1"/><path d="M25 45 Q40 55 55 45" stroke="currentColor" stroke-width="1"/></svg>
+            </div>
+            <span class="card-label">Empresa y Sociedad</span>
+          </div>
+          <div class="card-body">
+            <h3>Aportación Pro-Bono</h3>
+            <p>La ciudadanía activa se manifiesta cuando el desarrollador utiliza su expertise para fortalecer el tejido social, apoyando a ONGs o proyectos de código abierto que resuelven problemas humanitarios críticos.</p>
+            <button class="reveal-btn" data-target="ex-social-2">Ver Ejemplo de Aplicación</button>
+            <div class="reveal-content" id="ex-social-2">
+              <div class="example-box">
+                <strong>Patagonia y la renuncia a ganancias:</strong> En 2022, el fundador de Patagonia transfirió la empresa a un fideicomiso ambiental. Todas las ganancias (≈$100M/año) se destinarán a combatir el cambio climático. Un caso radical de RSE que redefine el propósito corporativo.
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── SECCIÓN 3: Ética Profesional ── -->
+    <section class="topic-section" id="profesional">
+      <div class="section-header">
+        <div class="section-number">03</div>
+        <div class="section-meta">
+          <span class="section-tag">Ejercicio Profesional</span>
+          <h2 class="section-title">Ética Profesional<br><em>Deontología y Excelencia Técnica</em></h2>
+          <p class="section-intro">Toda profesión lleva consigo un contrato moral implícito con la sociedad. Los códigos de ética no son burocracia: son la columna vertebral de la confianza pública.</p>
+        </div>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-image" style="--img-hue: 145deg;">
+            <div class="card-img-placeholder">
+              <svg viewBox="0 0 80 60" fill="none"><rect x="25" y="5" width="30" height="40" rx="3" stroke="currentColor" stroke-width="1.5"/><path d="M32 15 L48 15 M32 22 L48 22 M32 29 L40 29" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M20 50 L60 50" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="40" cy="52" r="3" fill="currentColor"/></svg>
+            </div>
+            <span class="card-label">Códigos de Ética</span>
+          </div>
+          <div class="card-body">
+            <h3>Confidencialidad y Conflicto de Intereses</h3>
+            <p>Del secreto profesional médico a la ética del periodista, el manejo de la información privilegiada define la integridad de cada profesión.</p>
+            <button class="reveal-btn" data-target="ex-prof-1">Ver Ejemplo de Aplicación</button>
+            <div class="reveal-content" id="ex-prof-1">
+              <div class="example-box">
+                <strong>El caso Enron y los auditores (2001):</strong> Arthur Andersen, una de las "Big Five" contables, destruyó documentos de auditoría para proteger a Enron. El colapso de ambas firmas ilustra cómo la complicidad profesional puede devastar la economía y la confianza pública.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image" style="--img-hue: 160deg;">
+            <div class="card-img-placeholder">
+              <svg viewBox="0 0 80 60" fill="none"><path d="M10 50 L40 10 L70 50 Z" stroke="currentColor" stroke-width="1.5"/><path d="M25 50 L25 35 M55 50 L55 35" stroke="currentColor" stroke-width="1.5"/><path d="M25 35 L55 35" stroke="currentColor" stroke-width="1.5"/><circle cx="40" cy="10" r="4" fill="currentColor" opacity=".6"/></svg>
+            </div>
+            <span class="card-label">Deontología</span>
+          </div>
+          <div class="card-body">
+            <h3>Whistleblowing: ¿Lealtad o Deber Moral?</h3>
+            <p>Cuando un empleado descubre irregularidades graves, enfrenta el dilema entre la lealtad a su organización y su deber ético con la sociedad.</p>
+            <button class="reveal-btn" data-target="ex-prof-2">Ver Ejemplo de Aplicación</button>
+            <div class="reveal-content" id="ex-prof-2">
+              <div class="example-box">
+                <strong>Edward Snowden y la NSA (2013):</strong> Al revelar programas de vigilancia masiva ilegal, Snowden sacrificó su carrera y libertad. Para unos, un traidor; para otros, un héroe ético que puso el bien común sobre la lealtad institucional.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card-wide">
+          <div class="card-image" style="--img-hue: 130deg;">
+            <div class="card-img-placeholder">
+              <svg viewBox="0 0 80 60" fill="none"><circle cx="20" cy="30" r="12" stroke="currentColor" stroke-width="1.5"/><circle cx="60" cy="30" r="12" stroke="currentColor" stroke-width="1.5"/><path d="M32 30 L48 30" stroke="currentColor" stroke-width="2"/><path d="M20 18 L20 8 M60 18 L60 8" stroke="currentColor" stroke-width="1" stroke-dasharray="3 2"/></svg>
+            </div>
+            <span class="card-label">Tecnología y Ética</span>
+          </div>
+          <div class="card-body">
+            <h3>Ingenieros, Arquitectos y la Responsabilidad del Diseño</h3>
+            <p>¿Tiene responsabilidad ética el ingeniero que diseña un arma, o el arquitecto que construye un espacio inaccesible? El diseño es siempre una decisión moral.</p>
+            <button class="reveal-btn" data-target="ex-prof-3">Ver Ejemplo de Aplicación</button>
+            <div class="reveal-content" id="ex-prof-3">
+              <div class="example-box">
+                <strong>El Challenger y los ingenieros de Morton Thiokol (1986):</strong> Ingenieros advirtieron contra el lanzamiento por temperaturas peligrosas. Presionados por directivos, callaron. El transbordador explotó. Un caso ético de referencia sobre la jerarquía vs. el deber técnico.
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── SECCIÓN 4: Corrupción y Legalidad ── -->
+    <section class="topic-section" id="corrupcion">
+      <div class="section-header">
+        <div class="section-number">04</div>
+        <div class="section-meta">
+          <span class="section-tag">Justicia &amp; Instituciones</span>
+          <h2 class="section-title">Corrupción <br><em>y Legalidad</em></h2>
+          <p class="section-intro">La corrupción no es solo un problema legal: es un fracaso ético que erosiona la confianza, perpetúa la desigualdad y destruye instituciones enteras.</p>
+        </div>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-image" style="--img-hue: 38deg;">
+            <div class="card-img-placeholder">
+              <svg viewBox="0 0 80 60" fill="none"><path d="M40 8 L55 30 L40 52 L25 30 Z" stroke="currentColor" stroke-width="1.5"/><path d="M15 30 L25 30 M55 30 L65 30" stroke="currentColor" stroke-width="1.5"/><circle cx="40" cy="30" r="5" stroke="currentColor" stroke-width="1.5"/><path d="M40 8 L40 25 M40 35 L40 52" stroke="currentColor" stroke-width="1" stroke-dasharray="3 2" opacity=".5"/></svg>
+            </div>
+            <span class="card-label">Ética Pública</span>
+          </div>
+          <div class="card-body">
+            <h3>La Ética de lo Legal vs. lo Correcto</h3>
+            <p>Algo puede ser legal y profundamente inmoral (evasión fiscal en paraísos fiscales). Y algo ilegal puede ser moralmente justificable (desobediencia civil). La legalidad no equivale a ética.</p>
+            <button class="reveal-btn" data-target="ex-corr-1">Ver Ejemplo de Aplicación</button>
+            <div class="reveal-content" id="ex-corr-1">
+              <div class="example-box">
+                <strong>Papeles de Panamá (2016):</strong> 11.5 millones de documentos revelaron cómo líderes mundiales y corporaciones usaban paraísos fiscales legalmente para evadir responsabilidades sociales. Legal en muchos casos, éticamente insostenible en todos.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image" style="--img-hue: 45deg;">
+            <div class="card-img-placeholder">
+              <svg viewBox="0 0 80 60" fill="none"><rect x="30" y="5" width="20" height="5" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M40 10 L40 20" stroke="currentColor" stroke-width="1.5"/><path d="M15 20 L65 20 M20 20 L20 45 M60 20 L60 45" stroke="currentColor" stroke-width="1.5"/><path d="M15 45 L65 45" stroke="currentColor" stroke-width="1.5"/><rect x="32" y="30" width="16" height="15" stroke="currentColor" stroke-width="1"/></svg>
+            </div>
+            <span class="card-label">Instituciones</span>
+          </div>
+          <div class="card-body">
+            <h3>Anticorrupción: Transparencia e Instituciones</h3>
+            <p>¿Qué mecanismos hacen que las instituciones sean honestas? La transparencia, la rendición de cuentas y la independencia judicial son los antídotos éticos más potentes.</p>
+            <button class="reveal-btn" data-target="ex-corr-2">Ver Ejemplo de Aplicación</button>
+            <div class="reveal-content" id="ex-corr-2">
+              <div class="example-box">
+                <strong>Escándalo Odebrecht en Latinoamérica:</strong> La constructora brasileña pagó sobornos a funcionarios de 12 países. Su desmantelamiento mostró que la corrupción es sistémica y transnacional, y que combatirla requiere cooperación internacional y protección a testigos.
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ── SECCIÓN 5: ODS ── -->
+    <section class="topic-section" id="ods">
+      <div class="section-header">
+        <div class="section-number">05</div>
+        <div class="section-meta">
+          <span class="section-tag">Agenda 2030</span>
+          <h2 class="section-title">Desarrollo <br><em>Sostenible · ODS</em></h2>
+          <p class="section-intro">Los 17 Objetivos de Desarrollo Sostenible de la ONU son un contrato ético global. La sostenibilidad no es una opción: es la condición de posibilidad de cualquier futuro.</p>
+        </div>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card">
+          <div class="card-image" style="--img-hue: 270deg;">
+            <div class="card-img-placeholder">
+              <svg viewBox="0 0 80 60" fill="none"><circle cx="40" cy="30" r="18" stroke="currentColor" stroke-width="1.5"/><path d="M22 30 Q31 18 40 30 Q49 42 58 30" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M40 12 L40 48" stroke="currentColor" stroke-width="1" opacity=".4"/><ellipse cx="40" cy="30" rx="10" ry="18" stroke="currentColor" stroke-width="1" opacity=".4"/></svg>
+            </div>
+            <span class="card-label">Justicia Climática</span>
+          </div>
+          <div class="card-body">
+            <h3>Justicia Intergeneracional y Clima</h3>
+            <p>¿Tenemos obligaciones éticas con generaciones que aún no existen? La crisis climática exige replantear el tiempo moral: nuestras decisiones de hoy son deudas con el futuro.</p>
+            <button class="reveal-btn" data-target="ex-ods-1">Ver Ejemplo de Aplicación</button>
+            <div class="reveal-content" id="ex-ods-1">
+              <div class="example-box">
+                <strong>Acuerdo de París (2015) y las NDCs:</strong> 196 países se comprometieron a reducir emisiones. Sin embargo, los países más vulnerables al cambio climático son los que menos lo han causado. Un ejemplo de injusticia ética global que el Acuerdo intenta, imperfectamente, abordar.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-image" style="--img-hue: 280deg;">
+            <div class="card-img-placeholder">
+              <svg viewBox="0 0 80 60" fill="none"><path d="M10 50 Q20 20 40 25 Q55 28 70 10" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M40 25 L40 50" stroke="currentColor" stroke-width="1" stroke-dasharray="3 2"/><circle cx="40" cy="25" r="4" fill="currentColor" opacity=".7"/><path d="M10 50 L70 50" stroke="currentColor" stroke-width="1" opacity=".3"/><text x="8" y="55" font-size="7" fill="currentColor" opacity=".5">2015</text><text x="60" y="15" font-size="7" fill="currentColor" opacity=".5">2030</text></svg>
+            </div>
+            <span class="card-label">Agenda 2030</span>
+          </div>
+          <div class="card-body">
+            <h3>Consumo Responsable: ODS 12</h3>
+            <p>Producir y consumir de manera sostenible es una decisión ética cotidiana. Cada compra es un voto por un modelo económico. La huella ecológica es también una huella moral.</p>
+            <button class="reveal-btn" data-target="ex-ods-2">Ver Ejemplo de Aplicación</button>
+            <div class="reveal-content" id="ex-ods-2">
+              <div class="example-box">
+                <strong>Fast Fashion y Bangladesh (Rana Plaza, 2013):</strong> El derrumbe de una fábrica mató a 1,134 trabajadores produciendo ropa para marcas globales. El caso expuso cómo el consumismo descontrolado en el norte global genera tragedias éticas en el sur global.
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card card-wide">
+          <div class="card-image" style="--img-hue: 260deg;">
+            <div class="card-img-placeholder">
+              <svg viewBox="0 0 80 60" fill="none"><rect x="5" y="35" width="10" height="20" stroke="currentColor" stroke-width="1.5"/><rect x="20" y="25" width="10" height="30" stroke="currentColor" stroke-width="1.5"/><rect x="35" y="15" width="10" height="40" stroke="currentColor" stroke-width="1.5"/><rect x="50" y="20" width="10" height="35" stroke="currentColor" stroke-width="1.5"/><rect x="65" y="10" width="10" height="45" stroke="currentColor" stroke-width="1.5"/><path d="M5 35 Q35 5 75 10" stroke="currentColor" stroke-width="1" stroke-dasharray="4 3" opacity=".6"/></svg>
+            </div>
+            <span class="card-label">Desigualdad</span>
+          </div>
+          <div class="card-body">
+            <h3>Desigualdad Global y Ética de la Riqueza</h3>
+            <p>El 1% más rico posee más que el 50% inferior combinado. ODS 10: Reducción de Desigualdades. ¿Existe una obligación moral de redistribuir la riqueza? Rawls, Singer y Nozick responderían diferente.</p>
+            <button class="reveal-btn" data-target="ex-ods-3">Ver Ejemplo de Aplicación</button>
+            <div class="reveal-content" id="ex-ods-3">
+              <div class="example-box">
+                <strong>El "Giving Pledge" de Gates y Buffett:</strong> Más de 200 multimillonarios se comprometieron a donar la mayoría de su fortuna. Aunque voluntario, responde a la pregunta filosófica de Singer: si puedes evitar algo malo sin sacrificar nada comparable, estás moralmente obligado a hacerlo.
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ════════════ QUIZ ════════════ -->
+    <section class="quiz-section" id="quiz">
+      <div class="quiz-header">
+        <span class="section-tag">Pon a prueba tu conocimiento</span>
+        <h2 class="section-title">Quiz de <em>Ética</em></h2>
+        <p>Responde las siguientes preguntas y descubre cuánto has aprendido sobre dilemas éticos contemporáneos.</p>
+      </div>
+
+      <div class="quiz-container" id="quizContainer">
+        <!-- Q1 -->
+        <div class="quiz-question" id="q1">
+          <div class="question-number">Pregunta 01 / 03</div>
+          <p class="question-text">¿Cuál de los siguientes enfoques filosóficos afirma que la corrección moral de una acción depende únicamente de sus consecuencias?</p>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q1" value="a"><span>A) Deontología</span></label>
+            <label class="quiz-option"><input type="radio" name="q1" value="b"><span>B) Utilitarismo</span></label>
+            <label class="quiz-option"><input type="radio" name="q1" value="c"><span>C) Virtud aristotélica</span></label>
+            <label class="quiz-option"><input type="radio" name="q1" value="d"><span>D) Contrato social</span></label>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="quiz-question" id="q2">
+          <div class="question-number">Pregunta 02 / 03</div>
+          <p class="question-text">El concepto de "velo de ignorancia" fue propuesto por _____________ para diseñar principios de justicia imparciales.</p>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q2" value="a"><span>A) Immanuel Kant</span></label>
+            <label class="quiz-option"><input type="radio" name="q2" value="b"><span>B) Peter Singer</span></label>
+            <label class="quiz-option"><input type="radio" name="q2" value="c"><span>C) John Rawls</span></label>
+            <label class="quiz-option"><input type="radio" name="q2" value="d"><span>D) Aristóteles</span></label>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="quiz-question" id="q3">
+          <div class="question-number">Pregunta 03 / 03</div>
+          <p class="question-text">Según los ODS de la ONU, ¿para cuándo se estableció el plazo para lograr el desarrollo sostenible global?</p>
+          <div class="quiz-options">
+            <label class="quiz-option"><input type="radio" name="q3" value="a"><span>A) 2025</span></label>
+            <label class="quiz-option"><input type="radio" name="q3" value="b"><span>B) 2030</span></label>
+            <label class="quiz-option"><input type="radio" name="q3" value="c"><span>C) 2050</span></label>
+            <label class="quiz-option"><input type="radio" name="q3" value="d"><span>D) 2040</span></label>
+          </div>
+        </div>
+
+        <button class="quiz-submit" id="quizSubmit">Verificar Respuestas</button>
+
+        <div class="quiz-result" id="quizResult"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ════════════ FOOTER ════════════ -->
+  <footer class="site-footer">
+    <div class="footer-decoration"></div>
+    <div class="footer-inner">
+      <div class="footer-label">✦ Reflexión Ética</div>
+      <blockquote class="reflexion">
+        "La ética no es un conjunto de reglas que seguimos para evitar el castigo. Es la capacidad de preguntarnos, honestamente, qué clase de persona queremos ser y qué clase de mundo queremos construir. En un siglo marcado por la aceleración tecnológica, la crisis climática y la fractura social, ser ético no es un lujo: es la condición mínima de nuestra humanidad compartida."
+      </blockquote>
+      <div class="footer-meta">
+        <span>Ética y Ciudadanía</span>
+        <span class="footer-sep">·</span>
+        <span>Blog Académico Interactivo</span>
+        <span class="footer-sep">·</span>
+        <span>Alexander Garcia Velez</span>
+        <span class="footer-sep">·</span>
+        <span id="footerYear"></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
